@@ -1,5 +1,5 @@
 import './index.css'
-import {Routes, Route} from 'react-router'
+import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home'
 import FoodItem from './components/FoodItem'
 import FoodItemDetails from './components/FoodItemDetails'

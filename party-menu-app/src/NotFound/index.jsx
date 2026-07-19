@@ -1,5 +1,5 @@
 import './index.css'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 const NotFound=()=>{
     return(
         <div className="main-container">

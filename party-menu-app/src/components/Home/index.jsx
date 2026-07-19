@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './index.css'
-import {Link, useNavigate} from 'react-router'
+import {Link, useNavigate} from 'react-router-dom'
 import FoodItem from '../FoodItem'
 import Cookies from 'js-cookie'
 const foodMenu=[

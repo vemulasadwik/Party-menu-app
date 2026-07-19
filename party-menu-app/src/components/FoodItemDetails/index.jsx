@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams, useNavigate } from "react-router";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import "./index.css";
 
 const FoodItemDetails = ({ foodMenu }) => {
