@@ -1,0 +1,228 @@
+.home-container{
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+.link{
+    text-decoration: none;
+}
+.home-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.home-header{
+    display: flex;
+    flex-direction: column;
+    align-items: left;  
+}
+.logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color:white;
+    
+}
+.welcome-message{
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+.home-button{
+    background-color:transparent;
+    color: lightgray;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.home-body{
+    background-color: #383737;
+    padding: 20px;
+    border-radius: 8px;
+}
+.home-body-Category{
+    padding: 10px 0;}
+.Category{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+
+}
+.home-body-category-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.home-body-category-button{
+    background-color:rgb(42, 37, 37);
+    color: lightgray;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.home-body-Diet{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Diet{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+.home-body-diet-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.home-body-diet-button{
+    background-color:rgb(42, 37, 37);
+    color: lightgray;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.home-body-search{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+.home-body-search-input{
+    background-color:rgb(42, 37, 37);
+    color: lightgray;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+}
+.home-body-search-button{
+    background-color:orange;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.item-found{
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+.comments-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.home-body-category-button.active{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+.home-body-diet-button.active{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+.no-dishes-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #b0b0b0;
+}
+.no-dishes-found h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.no-dishes-found p{
+    font-size: 1.1rem;
+    color: #b0b0b0;
+}
+
+@media (max-width: 900px) {
+    .home-header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .home-content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .home-body-category-buttons,
+    .home-body-diet-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .home-body-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .home-body-search-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 12px;
+    }
+    .logo {
+        font-size: 32px;
+    }
+    .welcome-message {
+        font-size: 1.2rem;
+    }
+    .home-content {
+        gap: 12px;
+    }
+    .home-body {
+        padding: 16px;
+    }
+    .home-body-category-button,
+    .home-body-diet-button,
+    .home-body-search-button {
+        width: 100%;
+    }
+    .home-body-search {
+        gap: 8px;
+    }
+    .home-body-search-input {
+        font-size: 0.95rem;
+    }
+    .comments-list {
+        gap: 12px;
+    }
+}

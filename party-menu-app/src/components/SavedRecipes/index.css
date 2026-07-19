@@ -1,0 +1,208 @@
+.saved-recipes-container {
+    background-color: #1a1a1a;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.saved-recipes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #383737;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.saved-recipes-title {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.saved-recipes-back-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.saved-recipes-back-button:hover {
+    background-color: darkorange;
+}
+
+.no-saved-recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: #b0b0b0;
+}
+
+.no-saved-recipes h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.no-saved-recipes p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+.saved-recipes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.saved-recipe-card {
+    background-color: #2e2323;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.saved-recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.saved-recipe-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.saved-recipe-info {
+    padding: 20px;
+    color: white;
+}
+
+.saved-recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.saved-recipe-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    flex: 1;
+}
+
+.veg-badge {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.non-veg-badge {
+    background-color: rgb(196, 14, 14);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.saved-recipe-category {
+    color: orange;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.saved-recipe-description {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.saved-recipe-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.saved-recipe-link {
+    text-decoration: none;
+    flex: 1;
+}
+
+
+
+.saved-recipe-remove-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(196, 14, 14);
+    border-color: rgb(196, 14, 14);
+    border-radius: 9px;
+}
+
+@media (max-width: 900px) {
+    .saved-recipes-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .saved-recipes-back-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .saved-recipes-container {
+        padding: 14px;
+    }
+    .saved-recipes-title {
+        font-size: 2rem;
+    }
+    .saved-recipes-back-button {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+    .saved-recipes-list {
+        grid-template-columns: 1fr;
+    }
+    .saved-recipe-card {
+        border-radius: 8px;
+    }
+    .saved-recipe-image {
+        height: 220px;
+    }
+    .saved-recipe-info {
+        padding: 16px;
+    }
+    .saved-recipe-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .saved-recipe-actions {
+        flex-direction: column;
+    }
+}
+

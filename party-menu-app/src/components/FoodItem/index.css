@@ -1,0 +1,82 @@
+.food-item{
+   margin-top: 10px;
+   width: 250px;
+   height: 380px;
+   background-color: #383737;
+   border-radius: 10px;
+   position: relative;
+}
+.food-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.food-details{
+    padding: 10px;
+}
+.food-category{
+    font-size: 12px;
+    color:orange;
+}
+.food-type-veg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.food-type-non-veg{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(196, 14, 14);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.food-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.food-description{
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #ccc;
+    font-family: 'Roboto';
+}
+.food-servings{
+    font-size: 0.9rem;
+    color: #8d8888;
+    margin-top: 5px;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 900px) {
+    .food-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 700px) {
+    .food-item {
+        width: 100%;
+    }
+    .food-image {
+        height: 180px;
+    }
+}

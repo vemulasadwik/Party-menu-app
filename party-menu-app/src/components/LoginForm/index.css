@@ -1,0 +1,114 @@
+.login-form-container{
+   background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.img-logo{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.login-form{
+    background-color: #282626;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    height: 450px;
+}
+.login-form-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-form-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 10px;
+}
+.login-form-description{
+    color: #ccc;
+    font-size: 14px;
+}
+.Email-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.password-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.form-label{
+    color: rgb(222, 214, 214);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.form-input{
+    background-color: #1a1a1a;
+    color: white;
+    height: 50px;
+    border: 1px solid #282626;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(102, 8, 8);
+}
+.sigin-btn{
+    width: 100%;
+    background-color: orangered;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid orangered;
+    border-radius: 10px;
+}
+.error-msg{
+    color: rgb(179, 25, 25);
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(78, 12, 12);
+    height: 30px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid ;
+
+}
+
+@media (max-width: 900px) {
+    .login-form {
+        width: 100%;
+        max-width: 420px;
+        padding: 26px;
+        margin: 0 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-form-container {
+        padding: 16px;
+    }
+    .login-form {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .login-form-title {
+        font-size: 26px;
+    }
+    .form-input {
+        height: 44px;
+        font-size: 0.95rem;
+    }
+    .sigin-btn {
+        height: 40px;
+        font-size: 0.95rem;
+    }
+}

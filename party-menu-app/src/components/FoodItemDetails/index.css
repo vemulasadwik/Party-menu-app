@@ -1,0 +1,207 @@
+.food-item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #383737;
+    color: white;
+}
+.food-item-details-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food-item-details-header-buttons{
+    display: flex;
+    gap: 10px;
+}
+.food-item-details-header-buttons-saved{
+    display: flex;
+    gap: 10px;
+}
+.food-item-details-header-button{
+    background-color: transparent;
+    color: lightgray;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.food-item-details-content{
+    display: flex;
+    gap: 20px;
+}
+.foodimg{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.food-item-details-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.food-item-details-info-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.food-item-details-info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.food-item-details-name-row{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.food-item-details-name-row h1{
+    margin: 0;
+}
+.category{
+    font-size: 12px;
+    color:orange;
+    background-color: #6b3808;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.veg{
+    background-color: green;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.non-veg{
+    background-color: rgb(196, 14, 14);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.food-item-details-ingredients{
+    margin-top: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+}
+.ingredients-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Ingredients{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.ingredient-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #383737;
+    border-radius: 8px;
+    border: 1px solid grey;
+    margin-top: 20px;
+}
+.ingredient-name{
+    font-weight: 500;
+}
+.ingredient-quantity{
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+.food-item-details-header-button.saved{
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+.food-item-details-header-button.notsaved{
+    background-color: orange;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .food-item-details {
+        padding: 16px;
+    }
+    .food-item-details-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .food-item-details-header-buttons,
+    .food-item-details-header-buttons-saved {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+    .food-item-details-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foodimg {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+    }
+    .food-item-details-info {
+        width: 100%;
+    }
+    .food-item-details-ingredients {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .food-item-details {
+        padding: 12px;
+    }
+    .food-item-details-header-button,
+    .food-item-details-header-button.notsaved {
+        width: 100%;
+        min-width: 0;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+    .food-item-details-info-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .food-item-details-name-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .category,
+    .veg,
+    .non-veg {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+    .food-item-details-info-content p {
+        font-size: 0.95rem;
+    }
+    .ingredient-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
